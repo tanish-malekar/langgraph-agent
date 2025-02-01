@@ -1,0 +1,29 @@
+# Node modules
+node_modules/
+
+#drizzle files
+drizzle/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+
+# TypeScript
+*.tsbuildinfo
+
+# Build output
+dist/
+build/
+
+# IDE specific files
+.idea/
+.vscode/
+.DS_Store
+
+# Other files to ignore
+coverage/
+*.tgz

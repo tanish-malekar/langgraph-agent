@@ -143,7 +143,6 @@ const agent = createReactAgent({
 
 
 
-
 while (true) {
   const userInput = readlineSync.question('You: '); // Prompt user for input
 

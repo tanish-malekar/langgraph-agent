@@ -1,0 +1,35 @@
+#first
+support for multiple lists -> dont have to be just todos.
+add optional datetime to tasks
+reschedule tasks
+check if task exists already before creating a new
+
+remind each task for the day at the time asked -> scheuler for tasks with datetime
+remind lists, tasks already created either periodically or once at a fixed time
+remind daily list at a fixed time in the morning
+
+Ai asks about status of task after each and If some task was not 
+completed  and asks when to reshedule.
+if not reply, asks what happened, do you want to change the schedule -> only thrice spread out through the day 
+optional: on completing tasks, if task was productive like not just lunch or chilling, gives motivating praise
+
+
+
+#second
+AI plans goals, with various tasks spread out over a time
+AI plans day. 
+AI learns preferences over time and schedules day acc to that. Like comes at different time 
+form office each day (some tasks duration changes), when sleep? when lunch, dinner? after how mcuh time is break needed, what chilling activities?
+
+
+
+
+
+#
+
+
+
+p
+
+
+

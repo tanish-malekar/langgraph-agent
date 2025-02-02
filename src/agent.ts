@@ -6,12 +6,12 @@ import "dotenv/config";
 import { ChatGoogleGenerativeAI } from "@langchain/google-genai";
 import readlineSync from "readline-sync";
 import {
-  createTodoTool,
   searchTodoTool,
   deleteTodoTool,
   markTodoCompletedTool,
   getPendingTodosTool,
   getAllTodosTool,
+  createTodoTool,
 } from "./tools";
 
 //model that the agent will use
@@ -40,17 +40,20 @@ const agent = createReactAgent({
   checkpointSaver: agentCheckpointer,
 });
 
+const mainFunction = async () => {
+  while (true) {
+    const userInput = readlineSync.question("You: "); // Prompt user for input
 
-while (true) {
-  const userInput = readlineSync.question("You: "); // Prompt user for input
+    const agentFinalState = await agent.invoke(
+      { messages: [new HumanMessage(userInput)] }, // Use user input here
+      { configurable: { thread_id: "42" } }
+    );
 
-  const agentFinalState = await agent.invoke(
-    { messages: [new HumanMessage(userInput)] }, // Use user input here
-    { configurable: { thread_id: "42" } }
-  );
+    console.log(
+      "AI: ",
+      agentFinalState.messages[agentFinalState.messages.length - 1].content
+    );
+  }
+};
 
-  console.log(
-    "AI: ",
-    agentFinalState.messages[agentFinalState.messages.length - 1].content
-  );
-}
+mainFunction();

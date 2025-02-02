@@ -12,7 +12,7 @@ import {
   getPendingTodosTool,
   getAllTodosTool,
   createTodoTool,
-} from "./tools";
+} from "./tools/tools";
 
 //model that the agent will use
 const agentModel = new ChatGoogleGenerativeAI({

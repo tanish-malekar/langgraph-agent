@@ -42,14 +42,3 @@ AI learns preferences over time and schedules day acc to that. Like comes at dif
 form office each day (some tasks duration changes), when sleep? when lunch, dinner? after how mcuh time is break needed, what chilling activities?
 
 
-
-
-
-#
-
-
-
-p
-
-
-

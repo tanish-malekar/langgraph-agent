@@ -1,5 +1,5 @@
 import { drizzle } from "drizzle-orm/node-postgres";
-import { todoTable } from "./db/schema.js";
+import { todoTable } from "../db/schema.js";
 import { eq, like } from "drizzle-orm";
 import "dotenv/config";
 

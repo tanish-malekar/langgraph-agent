@@ -1,9 +1,29 @@
 #first
 support for multiple lists -> dont have to be just todos.
-add optional datetime to tasks
-reschedule tasks
-check if task exists already before creating a new
+ex: add "" to personal item list
+tools: get all lists
+        get a list data
+        CRUD data to some list
+        #have a master list incase no list is provided
 
+add optional datetime to tasks:
+while adding a item it would take time as optional
+
+
+reschedule tasks:
+find the task
+update the time of the task, one function to update any task -> ONE FUNCTION EACH FOR CRUD?
+
+
+check if task exists already before creating a new
+search for the task -> by getting all tasks ? or SIMILARITY SEARCH OR how? VECTOR DB?
+if already there, update with new info
+
+SCHEMA:
+ID, ITEM, LIST NAME, TIME 
+
+
+#SECOND
 remind each task for the day at the time asked -> scheuler for tasks with datetime
 remind lists, tasks already created either periodically or once at a fixed time
 remind daily list at a fixed time in the morning
@@ -11,11 +31,11 @@ remind daily list at a fixed time in the morning
 Ai asks about status of task after each and If some task was not 
 completed  and asks when to reshedule.
 if not reply, asks what happened, do you want to change the schedule -> only thrice spread out through the day 
-optional: on completing tasks, if task was productive like not just lunch or chilling, gives motivating praise
+on completing tasks, if task was productive like not just lunch or chilling, gives motivating praise
 
 
 
-#second
+#THIRD
 AI plans goals, with various tasks spread out over a time
 AI plans day. 
 AI learns preferences over time and schedules day acc to that. Like comes at different time 
